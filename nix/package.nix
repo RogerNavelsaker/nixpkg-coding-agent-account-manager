@@ -5,6 +5,19 @@ let
   sourceRoot = builtins.path {
     path = ../upstream;
     name = "source";
+    filter = path: type:
+      let
+        base = baseNameOf path;
+      in
+      !(builtins.elem base [
+        ".beads"
+        ".git"
+        ".github"
+        "gh_og_share_image.png"
+        "pic.png"
+        "playwright-report"
+        "result"
+      ]);
   };
   licenseMap = {
     "MIT" = lib.licenses.mit;
