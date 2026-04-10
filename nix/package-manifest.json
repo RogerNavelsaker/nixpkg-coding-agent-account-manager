@@ -1,0 +1,26 @@
+{
+  "source": {
+    "path": "upstream",
+    "channel": "github-head",
+    "defaultBranch": "main",
+    "version": "0.1.10",
+    "rev": "daf5d55e4076209ee2fd0219def6df437b6a81c4"
+  },
+  "package": {
+    "repo": "coding-agent-account-manager",
+    "version": "0.1.10"
+  },
+  "binary": {
+    "name": "caam",
+    "package": "cmd/caam"
+  },
+  "nix": {
+    "goBuilder": "go124",
+    "vendorHash": "sha256-qRsO/J7BH7/+4AB61y1heNy5yM2xtS+K44itJ3pvQwA="
+  },
+  "meta": {
+    "description": "Coding Agent Account Manager for switching and auditing AI account state",
+    "homepage": "https://github.com/Dicklesworthstone/coding_agent_account_manager",
+    "licenseSpdx": "MIT"
+  }
+}
