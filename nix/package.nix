@@ -1,23 +1,12 @@
-{ buildGo124Module ? null, buildGo125Module ? null, buildGoModule, lib }:
+{ buildGo124Module ? null, buildGo125Module ? null, buildGoModule, fetchFromGitHub, lib }:
 
 let
   manifest = builtins.fromJSON (builtins.readFile ./package-manifest.json);
-  sourceRoot = builtins.path {
-    path = ../upstream;
-    name = "source";
-    filter = path: type:
-      let
-        base = baseNameOf path;
-      in
-      !(builtins.elem base [
-        ".beads"
-        ".git"
-        ".github"
-        "gh_og_share_image.png"
-        "pic.png"
-        "playwright-report"
-        "result"
-      ]);
+  sourceRoot = fetchFromGitHub {
+    owner = manifest.source.owner;
+    repo = manifest.source.repo;
+    rev = manifest.source.rev;
+    hash = manifest.source.hash;
   };
   licenseMap = {
     "MIT" = lib.licenses.mit;

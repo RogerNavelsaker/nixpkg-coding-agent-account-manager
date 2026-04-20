@@ -1,10 +1,13 @@
 {
   "source": {
-    "path": "upstream",
+    "type": "github",
+    "owner": "Dicklesworthstone",
+    "repo": "coding_agent_account_manager",
     "channel": "github-head",
     "defaultBranch": "main",
     "version": "0.1.10",
-    "rev": "daf5d55e4076209ee2fd0219def6df437b6a81c4"
+    "rev": "daf5d55e4076209ee2fd0219def6df437b6a81c4",
+    "hash": "sha256-9x327oFuU4fNrI/ofTZp0JQJvehgbdhdNZw5flA4aNs="
   },
   "package": {
     "repo": "coding-agent-account-manager",
