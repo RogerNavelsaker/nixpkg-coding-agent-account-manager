@@ -6,8 +6,8 @@
     "channel": "github-head",
     "defaultBranch": "main",
     "version": "0.1.10",
-    "rev": "275a31dffa7a35c6fdc3ccf0f774ea6a6b154019",
-    "hash": "sha256-2knT0PZB73nmEN9nqSraQ5RzJzd6dpqoe8smN158bco="
+    "rev": "52c076aff59dcbc115cfbc49ec1bc0289736489b",
+    "hash": "sha256-RGQANK/PEWj+LSxcf3XDHb+7TyyCoxfLVpi1C6Z3y1M="
   },
   "package": {
     "repo": "coding-agent-account-manager",
