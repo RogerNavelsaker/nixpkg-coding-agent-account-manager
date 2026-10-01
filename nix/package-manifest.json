@@ -19,7 +19,7 @@
   },
   "nix": {
     "goBuilder": "go124",
-    "vendorHash": "sha256-qRsO/J7BH7/+4AB61y1heNy5yM2xtS+K44itJ3pvQwA="
+    "vendorHash": "sha256-wbpoYSHxVbDzOZjyEWhcogr3sRB2KR9fetRnBWSWgio="
   },
   "meta": {
     "description": "Coding Agent Account Manager for switching and auditing AI account state",
